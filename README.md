@@ -1,6 +1,18 @@
-# Myapp1
+# Angular 6.2 with Node.js RESTful API with OAuth2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+
+## Installation
+
+Run `git clone https://github.com/sirinibin/angularjs6-with-node.js-restful-api-oauth2.git myapp1`
+
+Run `cd myapp1`
+
+## Serve the app
+
+Run `ng serve --port 4006 --proxy-config proxy.conf.json`
+
+
 
 ## Development server
 
