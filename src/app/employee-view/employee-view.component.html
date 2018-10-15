@@ -1,0 +1,16 @@
+<h1>Details of Employee #{{employee.name}}</h1>
+
+
+<a [routerLink]="['/employees/create']" class="btn btn-primary" > <i class="glyphicon glyphicon-plus"></i> Create</a>
+<a [routerLink]="['/employees']" class="btn btn-primary"> <i class="glyphicon glyphicon-list"></i> List </a>
+<a [routerLink]="['/employees/update/',employee.id]" class="btn btn-primary" > <i class="glyphicon glyphicon-pencil"></i> Update</a>
+<a href="#l" class="btn btn-danger"> <i class="glyphicon glyphicon-trash"></i>  Delete</a>
+<br/> <br/>
+
+<table border="1" class="table">
+  <tr> <td align="right" >Id:</td> <td> {{employee.id}} </td> </tr>
+  <tr> <td align="right" >Name:</td> <td> {{employee.name}} </td> </tr>
+  <tr> <td align="right" > E-mail:</td> <td> {{employee.email}}  </td> </tr>
+  <tr> <td align="right" > Created At:</td> <td> {{employee.created_at}}  </td> </tr>
+  <tr> <td align="right" > Updated At:</td> <td> {{employee.updated_at}}  </td> </tr>
+</table>

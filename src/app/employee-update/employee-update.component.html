@@ -1,0 +1,20 @@
+<h1>Update details of Employee <a [routerLink]="['/employees/view']" >#{{employee.name}} </a> </h1>
+
+<a [routerLink]="['/employees/create']" class="btn btn-primary" > <i class="glyphicon glyphicon-plus"></i> Create</a>
+<a [routerLink]="['/employees']" class="btn btn-primary" > <i class="glyphicon glyphicon-th-list"></i> List </a>
+<a href="#l" class="btn btn-danger"> <i class="glyphicon glyphicon-trash"></i>  Delete</a> <br/> <br/>
+<form  >
+<table class="table" >
+
+    <tr> <td align="right" > Name:</td> 
+        <td><input type="text"  [(ngModel)]="employee.name"  name="name" class="form-control" placeholder="Name" > 
+            <div  *ngIf="errors.name" style="color:red;">{{errors.name}}</div>
+         </td> </tr>
+    <tr> <td align="right" > E-mail:</td> <td> <input type="text" [(ngModel)]="employee.email" name="email" class="form-control" placeholder="E-mail"  >  
+        <div  *ngIf="errors.email" style="color:red;">{{errors.email}}</div>
+    </td> </tr>
+    <tr> <td align="right" ></td> <td align="right"><button type="submit" class="btn btn-primary" (click)="save(employee)"  > Save </button>  </td> </tr>
+
+</table>
+</form>
+

@@ -1,0 +1,29 @@
+<div class="col-md-4 col-md-offset-4 ">
+
+
+  <h1>Login</h1>
+  <form action="/">
+  <table class="table" border="1" style="border: 1px;">
+
+      <tr>
+        <td align="right">Username:</td>
+        <td><input type="text" [(ngModel)]="loginform.username"  name="username" class="form-control" placeholder="Username">
+            <div  *ngIf="errors.username" style="color:red;">{{errors.username}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Password:</td>
+        <td><input type="password" [(ngModel)]="loginform.password"  name="password" class="form-control" placeholder="Password">
+            <div  *ngIf="errors.password" style="color:red;">{{errors.password}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right"></td>
+        <td align="right">
+          <button type="submit" class="btn btn-primary" (click)="login(loginform)" >Login</button>
+        </td>
+      </tr>
+
+  </table>
+  </form>
+</div>
