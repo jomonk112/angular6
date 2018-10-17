@@ -52,7 +52,7 @@ export class EmployeeService {
    delete(id): any {
     console.log("Inside Employee delete service,id:"+id);
     let access_token= this.cookieService.get('accesstoken');
-    return this.http.delete("/v1/employees/"+id+"?access_token="+this.access_token);
+    return this.http.delete("/v1/employees/"+id+"?access_token="+access_token);
 
    }
    save(employee:Employee): any {
