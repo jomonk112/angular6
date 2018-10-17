@@ -8,6 +8,8 @@ Run `git clone https://github.com/sirinibin/angularjs6-with-node.js-restful-api-
 
 Run `cd myapp1`
 
+Run `npm install`
+
 ## Serve the app
 
 Run `ng serve --port 4006 --proxy-config proxy.conf.json`
