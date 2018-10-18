@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
+# Live Demo
+
+http://angular6.bootstrap3.nintriva.net/
+
+
+Login: admin/admin
+
 ## Installation
 
 Run `git clone https://github.com/sirinibin/angularjs6-with-node.js-restful-api-oauth2.git myapp1`
